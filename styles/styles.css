@@ -1,0 +1,189 @@
+/*--------------
+    fonts
+ ---------------*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ /* Base styles and Utilities  */
+body {
+    font-family: 'Poppins', sans-serif;
+   background-color: #FFFFFF;
+   margin: 0;
+   overflow-x: hidden;
+}
+.top-container{
+    background: #2D25A0;
+    height: 677px;
+    margin-bottom: 70px;
+    justify-content: center; 
+}
+.container{
+    display: flex;
+    align-items: center;
+      
+}
+.half-width h1{
+    font-size: 64px;
+    font-weight: 700;
+    color:#FFFFFF;
+    position: relative;
+    right: 200px;
+    bottom: 50px;
+    transition: box-shadow 1s 0s ease-in, text-shadow 1s .5s ease-out, padding 1s .5s, border 1s .2s ;
+}
+.text-display{
+    display: block;
+}
+.half-width a{
+    text-decoration: none;
+    padding: 10px 24px;
+    position: relative;
+    right: 200px;
+    bottom: 75px;
+    transition: border 1s;
+}
+.button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px 10px 24px;
+    color: white;
+
+}   
+.half-width img{
+    width: 556.01px;
+    height: 438px;
+    position: relative;
+    left: 200px;  
+}
+.half-width a:hover{
+    border: 2px solid skyblue;
+}
+.half-width h1:hover{
+    box-shadow: -6px -2px 23px 5px rgba(0,0,0,0.35);
+    padding-left: 7px;
+    border-radius: 15px;
+
+}
+/*---------------------- 
+Players section start 
+-----------------------*/
+.players-section{
+    justify-content: center; 
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+  
+    
+ }
+.players h2{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.player p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.player{
+    box-shadow: 1px 1px 40px 2px rgba(0, 0, 0, 0.15);
+    height: 500px;
+    width: 300px;
+   padding: 25px;
+    margin-left: 30px;
+}
+/*---------------------- 
+Players section end 
+-----------------------*/
+/* player highlights start */
+.players-highlights {
+    text-align: center;
+    padding: 50px 0px ;
+}
+.embed-videos {
+    max-width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+}
+iframe.video-iframe {
+    width: 100%;
+    height: 100%;
+}
+/* player highlights end  */
+/* jersy section start */
+.player-jersey{
+    padding-top: 50px;
+}
+.section-title{
+    text-align: center;
+}
+.jerseys{
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.jersey{
+    width: calc(100%/3);
+    padding: 10px;
+}
+.jersey-image img {
+    max-height: 500px;
+}
+
+/* jersy section end  */
+/* footer start */
+.footer-section{
+    
+    align-items: center;
+    justify-content: center;
+}
+footer img{
+    width: 480px;
+    height: 110px;
+    margin-top: 50px;
+
+}
+.icon{
+    text-align: center;
+    width: 170px;
+    height: 32px;
+    position: relative;
+    left: 30%;
+    font-size:xx-large;
+}
+.icon a{
+    text-decoration: none;
+    color:black;
+    padding: 20px;
+}
+.twitter{
+    color: aqua;
+}
+.youtube{
+    color: red;
+}
+.instagram{
+    color:rgb(138, 58, 185);
+}
+.copyright{
+    text-align: center ;
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+    left: 30px;
+}
+/*-----------
+ footer end    
+ ----------*/
+ /*---------------
+  Media Queries
+ --------------- */
