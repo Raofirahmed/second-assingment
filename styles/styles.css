@@ -8,13 +8,17 @@ body {
     font-family: 'Poppins', sans-serif;
    background-color: #FFFFFF;
    margin: 0;
-   overflow-x: hidden;
+}
+img{
+    max-width: 100%;
+    margin: 0;
 }
 .top-container{
     background: #2D25A0;
     height: 677px;
     margin-bottom: 70px;
-    justify-content: center; 
+    justify-content: center;
+    flex-wrap: wrap; 
 }
 .container{
     display: flex;
@@ -26,19 +30,29 @@ body {
     font-weight: 700;
     color:#FFFFFF;
     position: relative;
-    right: 200px;
-    bottom: 50px;
     transition: box-shadow 1s 0s ease-in, text-shadow 1s .5s ease-out, padding 1s .5s, border 1s .2s ;
 }
 .text-display{
     display: block;
 }
+.half-width {
+    width: 50%;
+}
+.contents {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    padding: 20px;
+}
+.banner-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
 .half-width a{
     text-decoration: none;
     padding: 10px 24px;
     position: relative;
-    right: 200px;
-    bottom: 75px;
     transition: border 1s;
 }
 .button{
@@ -51,10 +65,9 @@ body {
 
 }   
 .half-width img{
-    width: 556.01px;
-    height: 438px;
-    position: relative;
-    left: 200px;  
+    width: 100%;
+    height: auto;
+    position: relative; 
 }
 .half-width a:hover{
     border: 2px solid skyblue;
@@ -68,8 +81,10 @@ body {
 /*---------------------- 
 Players section start 
 -----------------------*/
-.players-section{
-    justify-content: center; 
+.players-section {
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .players{
     display: grid;
@@ -96,10 +111,7 @@ Players section start
 }
 .player{
     box-shadow: 1px 1px 40px 2px rgba(0, 0, 0, 0.15);
-    height: 500px;
-    width: 300px;
    padding: 25px;
-    margin-left: 30px;
 }
 /*---------------------- 
 Players section end 
@@ -187,3 +199,85 @@ footer img{
  /*---------------
   Media Queries
  --------------- */
+ @media only screen and (max-width:749px) {
+    .top-container  {
+        max-width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    .top-container .half-width img { 
+        left: 0;
+        width: auto;
+        height: auto;
+    }
+    .contents {
+        padding: 0;
+    }
+    .half-width {
+        width: 100%;
+    }
+    a.button {
+        display: inline-block;
+        height: auto;
+        width: auto;
+        margin-bottom: 50px;
+    }
+    .half-width h1{
+        bottom: 0;
+        right: 0;
+        
+    }
+    .half-width a {
+        bottom: 0;
+        right: 0;
+    }   
+    .Players-section {
+        padding: 0 20px;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0 20px;
+    }
+    .player img {
+        width: 100%;
+        height: auto
+    }
+    .embed-videos {
+        height: 300px;
+    }
+    .player-jersey {
+        padding: 0 20px;
+    }
+    .jerseys {
+        flex-wrap: wrap;
+    }
+    .jersey {
+        width: 100%;
+    }
+    .footer-section {
+        padding: 0 20px;
+    }
+    .footer-section .footer {
+        width: auto;
+    }
+    .footer-image {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .footer-section img {
+        width: 100%;
+        height: 100%;
+    }
+    .icon {
+        max-width: 90%;
+        margin: 0 auto;
+        left: 0;
+    }
+    .footer-section .footer h3 {
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+}
